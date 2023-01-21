@@ -10,6 +10,22 @@ import { useDispatch } from "react-redux";
 import { createBlog } from "redux/action/blog.action";
 import { Loading } from "component/Loading/Loading";
 const NewBlog = () => {
+  var toolbarOptions = [
+    ["bold", "italic", "underline", "strike"],
+    ["blockquote", "code-block"],
+    [
+      { header: 1 },
+      { header: 2 },
+      { header: 3 },
+      { header: 4 },
+      { header: 5 },
+      { header: 6 },
+    ],
+    ["image", "video"],
+    [{ list: "ordered" }, { list: "bullet" }],
+    [{ script: "sub" }, { script: "super" }],
+    [{ direction: "rtl" }],
+  ];
   const [value, setValue] = useState({
     title: "",
     content: "",
@@ -92,6 +108,7 @@ const NewBlog = () => {
           {imageURL && <img src={imageURL} height={200} className="mb-2" />}
           <ReactQuill
             theme="snow"
+            modules={{ toolbar: toolbarOptions }}
             value={blogContent}
             name="content"
             onChange={setBlogContent}
