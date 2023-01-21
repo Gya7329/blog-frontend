@@ -1,0 +1,10 @@
+.mainPara{
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph{
+    width: 60%;
+    margin-top: 31px;
+    line-height: 38px;
+}

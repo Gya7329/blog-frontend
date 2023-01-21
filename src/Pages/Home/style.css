@@ -1,0 +1,18 @@
+.mainNewBlogSec {
+  position: sticky;
+}
+.newBlogSec {
+  display: flex;
+  float: right;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
