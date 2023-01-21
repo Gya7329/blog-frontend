@@ -31,8 +31,14 @@
 }
 .flex-flow-row {
   flex-flow: row wrap;
-  justify-content: center;
   margin: 10px 100px;
+}
+
+@media (max-width: 768px) {
+  .flex-flow-row {
+    justify-content: center;
+    margin: auto;
+  }
 }
 .card-container {
   width: 300px;

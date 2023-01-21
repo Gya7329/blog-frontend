@@ -19,7 +19,7 @@ const Card = () => {
         <div className="d-flex gx-5 flex-flow-row">
           {blogs.map((item) => (
             <div
-              class=" mb-3 col-4 col-xl-4 col-lg-4"
+              class=" mb-3 col-md-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-2"
               key={Math.random(1000000)}
               onClick={() => navigate(`/blog/${item._id}`)}
             >
